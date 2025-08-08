@@ -1,0 +1,23 @@
+// Use filter() to get a subset of array elements
+const numbers = [1, 2, 3, 11, 12];
+const filtered = numbers.filter(num => num > 10);
+console.log(filtered);
+
+// Use reduce() to calculate sum or product
+const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); 
+
+// Use slice() to extract a portion of an array
+const sliced = numbers.slice(1, 3);
+console.log(sliced);
+
+// Use splice() to remove and/or add elements
+const spliced = [...numbers];
+spliced.splice(2, 1, 99);
+console.log(spliced); 
+
+// Use spread operator to clone and merge arrays
+const cloned = [...numbers];
+const merged = [...numbers, ...[100, 200]];
+console.log(cloned); 
+console.log(merged); 
