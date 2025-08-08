@@ -1,0 +1,4 @@
+greet.call(obj, 'arg');
+ greet.apply(obj, ['arg']);`.
+const boundGreet = greet.bind(obj);
+
