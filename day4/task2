@@ -1,0 +1,16 @@
+// Create objects representing real-world entities
+const student = {
+  name: "Alice",
+  age: 20,
+  displayInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+};
+
+// Add functions inside objects as methods and invoke them
+student.displayInfo(); 
+
+// Explore accessing and modifying object properties
+console.log(student.name); 
+student.age = 21;
+console.log(student.age);
