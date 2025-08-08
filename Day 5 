@@ -1,4 +1,4 @@
-
+task1
  [{name: "John", details {age: 30}}]; console.log(users[0].details.age);`.
 function sum(...args)
  { return args.reduce((a, b) => a + b); }`. {...original}; 
