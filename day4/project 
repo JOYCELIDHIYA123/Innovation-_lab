@@ -1,0 +1,39 @@
+// Create an array of product objects
+const products = [
+  { id: 1, name: "Product A", price: 10, quantity: 2 },
+  { id: 2, name: "Product B", price: 20, quantity: 0 },
+  { id: 3, name: "Product C", price: 30, quantity: 1 }
+];
+
+// Use filter() to get available items
+const available = products.filter(product => product.quantity > 0);
+console.log("Available items:", available);
+
+// Use reduce() to calculate total cart value
+const total = products.reduce((sum, product) => sum + (product.price * product.quantity), 0);
+console.log("Total cart value:", total);
+
+// Use slice() and splice() to manipulate product list
+const removedProduct = products.splice(1,:1);
+console.log("Removed product:", removedProduct);
+
+// Use spread operator to clone and update product list
+const clonedProducts = [...products];
+clonedProducts[0].quantity = 5; 
+console.log("Cloned and updated products:", clonedProducts);
+
+// Create a product object with a method to print details
+const product = {
+  id: 4,
+  name: "Product D",
+  price: 40,
+  quantity: 1,
+  printDetails() {
+    console.log(`ID: ${this.id}, Name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
+  }
+};
+product.printDetails();
+
+// Use destructuring to extract product details
+const { name, price } = product;
+console.log(`Name: ${name}, Price: ${price}`);
